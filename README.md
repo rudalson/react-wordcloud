@@ -96,3 +96,9 @@ $ firebase init
 ```shell
 $ firebase deploy
 ```
+
+## 8강 - 텍스트 파일 업로드 및 조회/삭제 구현
+긴문장을 ... 형태로 줄여주는 기능의 패키지 설치
+```shell
+$ yarn add react-text-truncate
+```
