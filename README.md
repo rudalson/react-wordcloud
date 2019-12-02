@@ -36,3 +36,8 @@ Windows 에서는
 $ yarn add @material-ui/core
 $ yarn add @material-ui/icons
 ```
+
+## 4강 - 페이지 라우팅 (React JS and Firebase Web App Project #4)
+```shell
+$ yarn add react-router-dom
+```
