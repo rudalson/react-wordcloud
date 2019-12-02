@@ -67,3 +67,6 @@ https://vf-hello-test-c5097.firebaseio.com/
   } ]
 }
 ```
+
+##  6강 - 단어(Word) 데이터 삽입 및 삭제 기능 구현하기
+firebase db에 CRUD 기능 구현
