@@ -87,8 +87,7 @@ class Words extends React.Component {
         nextState[e.target.name] = e.target.value;
         this.setState(nextState);
     }
-
-    handleSummit = (e) => {
+    handleSubmit = () => {
         const word = {
             word: this.state.word,
             weight: this.state.weight
@@ -142,7 +141,7 @@ class Words extends React.Component {
                         <TextField label="가중치" type="text" name="weight" value={this.state.weight} onChange={this.handleValueChange} /><br />
                     </DialogContent>
                     <DialogActions>
-                        <Button variant="contained" color="primary" onClick={this.handleSummit}>추가</Button>
+                        <Button variant="contained" color="primary" onClick={this.handleSubmit}>추가</Button>
                         <Button variant="outlined" color="primary" onClick={this.handleDialogToggle}>닫기</Button>
                     </DialogActions>
                 </Dialog>

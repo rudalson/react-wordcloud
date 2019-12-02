@@ -1,6 +1,6 @@
 # React 
 
-나동빈님의 [React와 Firebase로 앱 개발하기](https://youtu.be/jBlt6gJVL2Q)를 따라하며 만든 소스
+`나동빈`님의 [React와 Firebase로 앱 개발하기](https://youtu.be/jBlt6gJVL2Q)를 따라하며 만든 소스
 
 ## 1강 - 프로젝트 소개 (React JS and Firebase Web App Project #1)
 
@@ -17,7 +17,7 @@ $ yarn add --dev webpack-cli
 ```
 
 ## 2강 - React 앱 개발환경 구축하기 (React JS and Firebase Web App Project #2)
-package.json 파일에서
+`package.json` 파일에서
 ```json
 "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
@@ -70,3 +70,29 @@ https://vf-hello-test-c5097.firebaseio.com/
 
 ##  6강 - 단어(Word) 데이터 삽입 및 삭제 기능 구현하기
 firebase db에 CRUD 기능 구현
+
+## 7강 - 파이어베이스(Firebase)로 React 앱 배포
+`배포`하기 위해서는 `빌드`를 해야 하며 빌드하기 위해서는 아래의 패키지를 추가해준다.
+```shell
+$ yarn add --dev copy-webpack-plugin
+```
+`webpack.config.js` 설정에서 필요한 플러그인을 추가해준다.
+
+firebase를 다루기 위해
+```shell
+$ yarn add firebase-tools
+```
+
+빌드는
+```shell
+$ yarn build
+```
+
+firebase 설정은 `Hosting` 만 체크해 준다.
+```shell
+$ firebase init
+```
+
+```shell
+$ firebase deploy
+```
