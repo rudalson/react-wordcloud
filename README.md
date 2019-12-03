@@ -131,6 +131,28 @@ error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ 
 $ pip install konlpy
 ```
 
-## 11강 - React와 Flask API 연동하기
+## [11강 - React와 Flask API 연동하기](https://youtu.be/ocl_AEEcjbc)
 파이썬 코드에서 이미지 생성을 `file_name`으로 `textID`를 대체하여 파일을 생성한다. 그런 후 `CORS`를 구현해준다.
 
+## [12강 - 워드 클라우드 API 상세 수치 설정하기](https://youtu.be/Endl-7nNFTw)
+
+## [13강 AWS EC2에서 플라스크(Flask) 웹 서버 구동시키기](https://ndb796.tistory.com/244?category=1032205)
+`ec2`로 우분투 머신을 하나 만들고 거기에 flask 서버를 구동시킨다. 우분투에서 `python3`을 설치해주고 `venv` 환경 구성해준다.
+```shell
+(venv) ubuntu@ip-172-31-46-87:~/repo/react-wordcloud$ python wc-api.py
+ * Serving Flask app "wc-api" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+^Z
+[1]+  Stopped                 python wc-api.py
+(venv) ubuntu@ip-172-31-46-87:~/repo/react-wordcloud$ bg 1
+[1]+ python wc-api.py &
+(venv) ubuntu@ip-172-31-46-87:~/repo/react-wordcloud$ disown -h
+(venv) ubuntu@ip-172-31-46-87:~/repo/react-wordcloud$ netstat -nap | grep 5000
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+tcp        0      0 0.0.0.0:5000            0.0.0.0:*               LISTEN      31619/python
+```
