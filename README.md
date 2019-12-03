@@ -130,3 +130,7 @@ error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ 
 ```shell
 $ pip install konlpy
 ```
+
+## 11강 - React와 Flask API 연동하기
+파이썬 코드에서 이미지 생성을 `file_name`으로 `textID`를 대체하여 파일을 생성한다. 그런 후 `CORS`를 구현해준다.
+
