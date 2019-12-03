@@ -53,11 +53,11 @@ def make_cloud_image(tags, file_name):
 
 def process_from_text(text, max_count, min_length, words, file_name):
     # 최대 max_count 개의 단어 및 등장 횟수를 추출합니다.
-    tags = get_tags(text, max_count, min_length)
+    tags = get_tags(text, int(max_count), int(min_length))
     # 단어 가중치를 적용합니다.
     for n, _ in words.items():
         if n in tags:
-            tags[n] = tags[n] * int(words[n])
+            tags[n] = tags[n] * float(words[n])
     # 명사의 출현 빈도 정보를 통해 워드 클라우드 이미지를 생성합니다.
     make_cloud_image(tags, file_name)
 
