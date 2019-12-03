@@ -2,7 +2,7 @@
 
 `나동빈`님의 [React와 Firebase로 앱 개발하기](https://youtu.be/jBlt6gJVL2Q)를 따라하며 만든 소스
 
-## 1강 - 프로젝트 소개 (React JS and Firebase Web App Project #1)
+## 1강 - 프로젝트 소개
 
 - react
 - firebase
@@ -16,7 +16,7 @@ $ yarn add --dev babel-core babel-loader babel-preset-react-app
 $ yarn add --dev webpack-cli
 ```
 
-## 2강 - React 앱 개발환경 구축하기 (React JS and Firebase Web App Project #2)
+## 2강 - React 앱 개발환경 구축하기
 `package.json` 파일에서
 ```json
 "scripts": {
@@ -33,19 +33,19 @@ Windows 에서는
   },
 ```
 
-## 3강 - 내비게이션 바 만들기 (React JS and Firebase Web App Project #3)
+## 3강 - 내비게이션 바 만들기
 ```shell
 $ yarn add @material-ui/core
 $ yarn add @material-ui/icons
 ```
 
-## 4강 - 페이지 라우팅 (React JS and Firebase Web App Project #4)
+## 4강 - 페이지 라우팅
 `react router`를 사용하기 위해서는 아래의 패키지를 추가해준다.
 ```shell
 $ yarn add react-router-dom
 ```
 
-## 5강 - Firebase DB 구축 및 React와 연동 (React JS and Firebase Web App Project #5)
+## 5강 - Firebase DB 구축 및 React와 연동
 Google Firebase에서 Database - `Realtime database`를 `테스트 모드`로 생성을 해준다.
 
 ```
@@ -101,4 +101,11 @@ $ firebase deploy
 긴문장을 ... 형태로 줄여주는 기능의 패키지 설치
 ```shell
 $ yarn add react-text-truncate
+```
+
+## 9강 - React 웹 폰트 적용하기
+Google의 `Noto Sans KR` 폰트를 적용해보기 위해서는
+
+```shell
+$ yarn add style-loader css-loader
 ```
