@@ -109,3 +109,24 @@ Google의 `Noto Sans KR` 폰트를 적용해보기 위해서는
 ```shell
 $ yarn add style-loader css-loader
 ```
+
+## [10강 - Python 워드 클라우드 API 개발하기](https://youtu.be/ltt4Xf8BlqQ)
+`python`, `flask`, `knlp(자연어 처리)`, `word cloud` 패키지를 사용한 rest api 서버 프로그램 하나 작성한다.
+
+```shell
+$ pip install wordcloud matplotlib flask flask_cors
+```
+
+그리고 자연처 처리를 위해 `konlpy`를 설치할 것인데 `Windows`환경에서 설치하였을 때 아래와 같은 에러가 나왔다.
+```
+error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": http://landinghub.visualstudio.com/visual-cpp-build-tools
+```
+
+하지만 실제 저 path대로 가보면 페이지를 찾을 수 없다. [해결책](https://cofs.tistory.com/388)을 참조하여 해결하였다.
+
+[MS 사이트](https://visualstudio.microsoft.com/ko/vs/older-downloads/)에서 `재배포 가능 패키지 및 빌드 도구`에서 `Microsoft Build Tools 2015 업데이트 3` 를 다운로드 한 후 설치한다.
+
+그런 후 konlpy 패키지를 설치해준다.
+```shell
+$ pip install konlpy
+```
